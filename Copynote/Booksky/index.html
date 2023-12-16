@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copynote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Serif:opsz,wght@8..144,500&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Copynote</h1>
+    </div>
+    <div class="note"><h2>Save your note here...</h2></div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi numquam ea sint exercitationem omnis maxime alias hic rem officiis, doloremque quia a animi tenetur quod corrupti vel blanditiis consequuntur.</p>
+            <button onclick="deletebook(event)">Delete</button>
+
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="Popup-box">
+        <h2>Add Note</h2>
+        <form>
+            <input type="text" placeholder="Title" id="title-input">
+            <input type="text" placeholder="Author" id="autor-input">
+            <textarea placeholder="Short-description" id="description-input"></textarea>
+            <button id="add-copy">Add</button>
+            <button id="cancel-copy">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
